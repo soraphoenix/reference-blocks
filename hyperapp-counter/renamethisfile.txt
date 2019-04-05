@@ -1,0 +1,8 @@
+// Rename this file to .babelrc
+
+{
+  "presets": [
+    "es2015",
+    "stage-0"
+  ],
+}

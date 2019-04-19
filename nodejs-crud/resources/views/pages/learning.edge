@@ -1,0 +1,31 @@
+@layout('layouts/app')
+
+@section('title')
+Learning Edge Template Engine
+@endsection
+
+@section('content')
+    <h1>Learning Edge</h1>
+
+    @each(user in users)
+        <div style="border: 1px solid black; padding: 15px; background: grey;">
+        <h2>id: {{$loop.isEven}}</h2>
+            <h2>Name: {{user.name}}</h2>
+            <h4>Age: {{user.age}}</h4>
+        </div>
+
+    @else
+        <div style="border: 1px solid black; padding: 15px; background: grey;">
+            <h2>SORRY NO USERS IN THE DATABASE</h2>
+        </div>
+
+
+    @endeach
+
+    @include('partials/menu')
+
+@endsection
+
+@section('footer')
+    This is the new footer
+@endsection

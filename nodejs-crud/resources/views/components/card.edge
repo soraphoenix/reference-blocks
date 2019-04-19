@@ -1,0 +1,11 @@
+<div class="{{className}}" id="{{id}}" style="width: 25%; box-sizing: border-box; border: 1px solid black; padding: {{padding}}; display: inline-block">
+    <div style="display: flex">
+        <div style="width: 25%; height: 200px; box-sizing: border-box; background: {{color}}">
+        </div>
+        <div style="width: 75%; box-sizing: border-box;">
+            <p>
+                @!yield($slot.description)
+            </p>
+        </div>
+    </div>
+</div>

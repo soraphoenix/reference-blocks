@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    @!section('title')
+  </title>
+</head>
+<body>
+    @include('partials/menu')
+    
+    @!section('content')
+
+    @section('footer')
+      <h1>This is the default footer</h1>
+    @endsection
+
+</body>
+</html>

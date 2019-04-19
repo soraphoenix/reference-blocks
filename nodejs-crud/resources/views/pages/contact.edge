@@ -1,0 +1,28 @@
+@layout('layouts/app')
+
+@section('title')
+Contact Page
+@endsection
+
+@section('content')
+  <h1>Contact Page</h1>
+  <form action="/saveuser" method="POST">
+    {{ csrfField() }}
+    <input type="text" name="username[0]" placeholder="please enter your name">
+    <input type="text" name="username[1]" placeholder="please enter your name">
+    <input type="text" name="username[2]" placeholder="please enter your name">
+    <input type="text" name="username[3]" placeholder="please enter your name">
+    <select name="state" id="">
+      <option value="nyc">New York City</option>
+      <option value="mia">Miami</option>
+      <option value="la">Los Angeles</option>
+    </select>
+    <input type="radio" name="single" value="0"> not single
+    <input type="radio" name="single" value="1"> single
+    <input type="submit" value="save">
+  </form>
+@endsection
+
+@section('footer')
+    This is the new footer
+@endsection

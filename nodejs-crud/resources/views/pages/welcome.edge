@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello Adonis</title>
+  {{ style('style') }}
+</head>
+<body>
+  @include('partials/menu')
+  <section>
+    <div class="logo"></div>
+    <div class="title"></div>
+    <div class="subtitle">
+      <p>This is Tracy's page</p>
+      {{ route('myContactPage') }}
+    </div>
+  </section>
+</body>
+</html>

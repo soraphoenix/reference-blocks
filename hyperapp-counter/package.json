@@ -33,7 +33,7 @@
     "html-webpack-plugin": "^3.2.0",
     "hyperapp": "^0.12.1",
     "immutability-helper": "^2.7.0",
-    "node-sass": "^4.5.2",
+    "node-sass": "^4.13.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
